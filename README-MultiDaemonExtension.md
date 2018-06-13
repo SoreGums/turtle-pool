@@ -90,7 +90,7 @@ Right have got consensus at this point, either all nodes are the same as primary
 On some interval, probably every 5 seconds, unless turtlecoind-ha is used then can sub to events, each daemon will be pinged. Block chains compared *(height, hash, previous 3 hashes)*, the majority wins. Any daemon not in agreement gets marked `unhealthy` with a reason and daemon that doesn't respond gets marked `unresponsive`.
 
 #### Check 2 - peers
-While the first check is the pretty much it. there is another one. If the configured daemons only talk with each other they are not really part of the wider TRTL Network, so would want to mark those daemons as unhealthy as well.
+While the first check is pretty much it. there is another one. If the configured daemons only talk with each other they are not really part of the wider TRTL Network, so would want to mark those daemons as unhealthy as well.
 
 **Needs more words about how the checks are done and which daemon is picked**
 
